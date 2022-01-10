@@ -6,9 +6,9 @@ public class QuestionsDTO {
     @JsonProperty("canon")
     private boolean canon;
     @JsonProperty("game")
-    private Game game;
+    private GameDTO game;
     @JsonProperty("category")
-    private Category category;
+    private CategoryDTO category;
     @JsonProperty("invalidCount")
     private int invalidCount;
     @JsonProperty("gameId")
@@ -32,19 +32,19 @@ public class QuestionsDTO {
         this.canon = canon;
     }
 
-    public Game getGame() {
+    public GameDTO getGame() {
         return game;
     }
 
-    public void setGame(Game game) {
+    public void setGame(GameDTO game) {
         this.game = game;
     }
 
-    public Category getCategory() {
+    public CategoryDTO getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(CategoryDTO category) {
         this.category = category;
     }
 

@@ -2,7 +2,7 @@ package com.kenzie.app;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Category {
+public class CategoryDTO {
     @JsonProperty("canon")
     private boolean canon;
     @JsonProperty("title")

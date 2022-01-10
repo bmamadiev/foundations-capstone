@@ -83,7 +83,7 @@ public class Main {
             }
 
             if (counter == 10) {
-                System.out.println("Thank you for answering all the questions!");
+                System.out.println("Thank you for answering all the questions! You got the right answer for " + score + " questions.");
                 System.out.println("Your total score: " + score);
             }
         }

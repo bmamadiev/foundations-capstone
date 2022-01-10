@@ -2,7 +2,7 @@ package com.kenzie.app;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Game {
+public class GameDTO {
     @JsonProperty("canon")
     private boolean canon;
     @JsonProperty("aired")
