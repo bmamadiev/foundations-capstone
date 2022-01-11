@@ -29,6 +29,7 @@ public class Main {
     static String question;
     static String category;
 
+    // Write a method that randomly chooses a question and a category.
     public static String randomQuestion() {
 
         int max = 100;
@@ -44,6 +45,7 @@ public class Main {
         return "Category: " + categoryList.get(randInt) + "\n" + "Question: " + questionsList.get(randInt) + "\n";
     }
 
+    // Write a method that gets HTTP response, displays the random question and receives/processes the user input.
     public static void displayQuestion() {
 
         String httpResponse = CustomHttpClient.sendGET(URL);
@@ -90,7 +92,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        //Write main execution code here
+        //Write main execution code here.
         displayQuestion();
     }
 }
