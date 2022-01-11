@@ -29,7 +29,7 @@ public class Main {
     static String question;
     static String category;
 
-    // Write a method that randomly chooses a question and a category.
+    //Randomly choose a question and a category.
     public static String randomQuestion() {
 
         int max = 100;
@@ -45,8 +45,8 @@ public class Main {
         return "Category: " + categoryList.get(randInt) + "\n" + "Question: " + questionsList.get(randInt) + "\n";
     }
 
-    // Write a method that gets HTTP response, displays the random question and receives/processes the user input.
-    public static void displayQuestion() {
+    // Process HTTP response and get the question.
+    public static void getQuestion() {
 
         String httpResponse = CustomHttpClient.sendGET(URL);
         ObjectMapper objectMapper = new ObjectMapper();
@@ -64,6 +64,10 @@ public class Main {
             categoryList.add(question.getCategory().getTitle());
             answerList.add(question.getAnswer());
         }
+    }
+
+    // Display the question and process the user input.
+    public static void displayQuestion() {
 
         System.out.println("Please answer random ten questions. For each correct answer, you will get one point. \n");
 
@@ -92,7 +96,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
         //Write main execution code here.
+        getQuestion();
         displayQuestion();
     }
 }
