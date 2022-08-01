@@ -4,7 +4,10 @@ Created an app that uses the jService API to create a trivia quiz with 10 questi
 
 To complete the project, I implemented the following tasks:
 
-• Used HTTP GET to pull questions and categories from the API;
-• Created a command-line interface that accepts and checks a user's input;
-• Mapped JSON data to a data transfer object;
+• Used HTTP GET to pull questions and categories from the API.
+
+• Created a command-line interface that accepts and checks a user's input.
+
+• Mapped JSON data to a data transfer object.
+
 • Wrote a code that is organized, easily understood, and free of errors.
