@@ -1,4 +1,4 @@
-# Kenzie Java Project - Capstone
+# Kenzie Java Project - Quiz
 
 Created an app that uses the jService API to create a trivia quiz with 10 questions where a user will be shown questions that they can respond to. If the user answers correctly, the total score will update by one point. If the user answers incorrectly, the total score does not update.
 
